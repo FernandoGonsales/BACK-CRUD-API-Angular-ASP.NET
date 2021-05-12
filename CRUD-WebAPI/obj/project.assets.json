@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AutoMapper/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
       "Castle.Core/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -604,6 +617,20 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Mock/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Mock.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mock.dll": {}
         }
       },
       "Moq/4.16.1": {
@@ -2247,6 +2274,23 @@
     }
   },
   "libraries": {
+    "AutoMapper/9.0.0": {
+      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "type": "package",
+      "path": "automapper/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.9.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
     "Castle.Core/4.4.0": {
       "sha512": "b5rRL5zeaau1y/5hIbI+6mGw3cwun16YjkHZnV9RRT5UyUIFsgLmNXJ0YnIN9p8Hw7K7AbG1q1UclQVU3DinAQ==",
       "type": "package",
@@ -3148,6 +3192,18 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Mock/1.0.0": {
+      "sha512": "R5b6iSOmj4iIlOuI69na0HjqqtbmOgl94jE7iKOtlRZtP5aoMGQY8G0ga97Pirhyy/K1Ex0RuEndjymOyt4yzA==",
+      "type": "package",
+      "path": "mock/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Mock.dll",
+        "mock.1.0.0.nupkg.sha512",
+        "mock.nuspec"
       ]
     },
     "Moq/4.16.1": {
@@ -7309,6 +7365,7 @@
       "Microsoft.EntityFrameworkCore.sqlite >= 5.0.5",
       "Microsoft.EntityFrameworkCore.tools >= 5.0.5",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
+      "Mock >= 1.0.0",
       "Moq >= 4.16.1",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "coverlet.collector >= 1.3.0",
@@ -7377,6 +7434,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.7.1, )"
+          },
+          "Mock": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Moq": {
             "target": "Package",

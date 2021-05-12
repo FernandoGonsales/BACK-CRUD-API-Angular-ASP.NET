@@ -3,6 +3,12 @@ using CRUD_WebAPI.Data;
 using Xunit;
 using Moq;
 using CRUD_WebAPI.Models;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Net;
+using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD.WebAPI.Tests.Controllers
 {
@@ -23,6 +29,8 @@ namespace CRUD.WebAPI.Tests.Controllers
                 .Setup(repository => repository.Create(It.IsAny<Developer>()))
                 .Returns(DeveloperCadastrado());
         }
+
+                
 
         private Developer DeveloperCadastrado()
         {

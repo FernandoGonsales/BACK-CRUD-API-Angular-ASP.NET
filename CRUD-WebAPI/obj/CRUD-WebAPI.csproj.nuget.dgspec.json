@@ -63,6 +63,10 @@
               "target": "Package",
               "version": "[16.7.1, )"
             },
+            "Mock": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Moq": {
               "target": "Package",
               "version": "[4.16.1, )"
