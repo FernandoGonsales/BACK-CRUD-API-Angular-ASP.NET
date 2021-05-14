@@ -38,10 +38,13 @@ namespace CRUD_WebAPI.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             try
-            {
-                var result = await _repository.GetById(id);
-                
-                return Ok(result);
+            {   
+                Developer developer = await _repository.GetById(id);
+                if (developer == null)
+                {
+                    return NotFound($"Desenvolvedor não encontrado.");
+                }       
+                return Ok(developer);
             }
             catch (Exception ex)
             {
@@ -56,7 +59,6 @@ namespace CRUD_WebAPI.Controllers
             {   
                 developer.Id = null;
                 _repository.Create(developer);
-
                 if(await _repository.SaveChangesAsync())
                 {
                     return Ok(developer);
@@ -66,7 +68,6 @@ namespace CRUD_WebAPI.Controllers
             {
                 return BadRequest($"Erro: {ex.Message}");
             }
-
             return BadRequest();
         }
 
@@ -75,12 +76,13 @@ namespace CRUD_WebAPI.Controllers
         {
             try
             {
-                var Developer = await _repository.GetById(id);
-                if(Developer == null) return NotFound();
+                if (await _repository.GetById(id) == null)
+                {
+                    return NotFound();
+                }
 
                 developer.Id = id;
                 _repository.Update(developer);
-
                 if(await _repository.SaveChangesAsync())
                 {
                     return Ok(developer);
@@ -90,7 +92,6 @@ namespace CRUD_WebAPI.Controllers
             {
                 return BadRequest($"Erro: {ex.Message}");
             }
-
             return BadRequest();
         }
 
@@ -99,21 +100,22 @@ namespace CRUD_WebAPI.Controllers
         {
             try
             {
-                var Developer = await _repository.GetById(id);
-                if(Developer == null) return NotFound();
+                Developer developer = await _repository.GetById(id);
+                if (developer == null)
+                {
+                    return NotFound();
+                }
 
-                _repository.Delete(Developer);
-
+                _repository.Delete(developer);
                 if(await _repository.SaveChangesAsync())
                 {
-                    return Ok(new {message = "Deletado"});
-                }                
+                    return Ok(developer);
+                }            
             }
             catch (Exception ex)
             {
                 return BadRequest($"Erro: {ex.Message}");
             }
-
             return BadRequest();
         }
     }

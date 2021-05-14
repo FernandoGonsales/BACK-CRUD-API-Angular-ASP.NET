@@ -1,7 +1,6 @@
 using System.Linq;
 using System.Threading.Tasks;
 using CRUD_WebAPI.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CRUD_WebAPI.Data
@@ -14,31 +13,26 @@ namespace CRUD_WebAPI.Data
         {
             _context = context;
         }
-        public void Create<T>(T entity) where T : class
+
+        public Developer Create(Developer developer)
         {
-            _context.Add(entity);
+            _context.Developers.AddRangeAsync(developer);
+            return developer;
         }
-        public void Update<T>(T entity) where T : class
+
+        public Developer Update(Developer developer)
         {
-            _context.Update(entity);
+            _context.Developers.UpdateRange(developer);
+            return developer;
         }
-        public void Delete<T>(T entity) where T : class
+        public Developer Delete(Developer developer)
         {
-            _context.Remove(entity);
+            _context.Developers.RemoveRange(developer);
+            return developer;
         }
         public async Task<bool> SaveChangesAsync()
         {
             return (await _context.SaveChangesAsync()) > 0;
-        }
-
-        public async Task<Developer[]> GetAll()
-        {
-            IQueryable<Developer> query = _context.Developers;
-
-            query = query.AsNoTracking()
-                         .OrderBy(c => c.Id);
-
-            return await query.ToArrayAsync();
         }
         public async Task<Developer> GetById(int id)
         {
@@ -49,6 +43,16 @@ namespace CRUD_WebAPI.Data
                          .Where(developer => developer.Id == id);
 
             return await query.FirstOrDefaultAsync();
+        }
+
+        public async Task<Developer[]> GetAll()
+        {
+            IQueryable<Developer> query = _context.Developers;
+
+            query = query.AsNoTracking()
+                         .OrderBy(c => c.Id);
+
+            return await query.ToArrayAsync();
         }
     }
 }

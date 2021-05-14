@@ -115,9 +115,6 @@ C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\obj\Debug\net5.0\CRUD-WebAPI
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\testhost.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\testhost.exe
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -127,10 +124,6 @@ C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.T
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\NuGet.Frameworks.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.abstractions.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.assert.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.core.dll
-C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\xunit.execution.dotnet.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\fert_\Desktop\CRUD\CRUD-WebAPI\CRUD-WebAPI\bin\Debug\net5.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll

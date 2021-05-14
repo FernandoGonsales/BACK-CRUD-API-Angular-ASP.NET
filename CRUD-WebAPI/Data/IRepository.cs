@@ -5,9 +5,11 @@ namespace CRUD_WebAPI.Data
 {
     public interface IRepository
     {
-        void Create<T>(T entity) where T : class;
-        void Update<T>(T entity) where T : class;
-        void Delete<T>(T entity) where T : class;
+        Developer Create(Developer developer);
+
+        Developer Update(Developer developer);
+
+        Developer Delete(Developer developer);
         
         Task<bool> SaveChangesAsync();
 

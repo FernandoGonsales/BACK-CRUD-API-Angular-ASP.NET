@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj": {}
+    "C:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj": {
+    "C:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj",
         "projectName": "CRUD-WebAPI",
-        "projectPath": "c:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj",
+        "projectPath": "C:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\CRUD-WebAPI.csproj",
         "packagesPath": "C:\\Users\\fert_\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\fert_\\Desktop\\CRUD\\CRUD-WebAPI\\CRUD-WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fert_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,35 +61,11 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.7.1, )"
-            },
-            "Mock": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.16.1, )"
+              "version": "[16.10.0-release-20210429-01, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.3.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -110,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
